@@ -1,0 +1,11 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+
+<p><%= link_to "Edit task", edit_article_path %></p>
+
+<p><%= link_to "Delete this article",
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></p>
+
+<p><%= link_to "Bakc to list", articles_path %></p>
